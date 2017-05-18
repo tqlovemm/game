@@ -1,0 +1,38 @@
+body{
+
+}
+
+.banner{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+#output{
+    width: 100%;
+}
+#output2{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    left:0px;
+    bottom: 15%;
+}
+#qrcode{
+    position:absolute;
+    left:-999px;
+    
+}
+#canvas{
+    width: 720px;
+}
+.btn{
+    position: absolute;
+    bottom: 20%;
+    left:0;
+    width: 100%;
+
+    width: 60%;
+    margin: 0 20%;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <title>你被爱的七大理由</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="" name="Keywords">
+        <meta name="description" content="“">
+        <meta name="author" content="lcwl">
+
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/index.css">
+
+        <script>
+            $uid = '';
+        </script>
+<!--        <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?4a51512e983d5ee97a332f55e673e995";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>-->
+    </head>
+
+    <body>
+        <div class="titlediv">
+            <img class="title" src="./images/title01.png"/>
+            <p class="subtitle">你被爱<br>
+                的七大理由</p>
+        </div>
+        <img class="bg" src="./images/bg01.jpg"/>
+
+
+        <div class="op">
+            <input class="input" placeholder="请输入你的名字" maxlength="10"></input>
+            <img class="btn" src="./images/btn01.png"/>
+        </div>
+
+ <!--         <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yn.menda" target="_blank"><img class="banner" src="./images/banner.jpg"/></a>
+
+ -->
+
+        <script type="text/javascript" src="./js/zepto.min.js"></script>
+        <script type="text/javascript" src="./js/zepto.cookie.js"></script>
+        <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script type="text/javascript" src="js/index.js?v6"></script>
+        <!--<script type="text/javascript" src="http://img1.uullnn.com/h5_game/seven/js/index.js?v1"></script>-->
+        <!--<script src="http://img1.uullnn.com/tracking.js"></script>-->
+
+        <script>
+            var browser = {
+                versions: function () {
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {         //移动终端浏览器版本信息
+                        trident: u.indexOf('Trident') > -1, //IE内核
+                        presto: u.indexOf('Presto') > -1, //opera内核
+                        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                        iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                        iPad: u.indexOf('iPad') > -1, //是否iPad
+                        webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                    };
+                }(),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            };
+            if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
+                var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+                if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                    //在微信中打开
+                }else{
+                   // $('body').html('<div class="middle">请在微信打开</div>').addClass('gray');
+                }
+//                if (ua.match(/WeiBo/i) == "weibo") {
+//                    //在新浪微博客户端打开
+//                }
+//                if (ua.match(/QQ/i) == "qq") {
+//                    //在QQ空间打开
+//                }
+//                if (browser.versions.ios) {
+//                    //是否在IOS浏览器打开
+//                }
+//                if(browser.versions.android){
+//                    //是否在安卓浏览器打开
+//                }
+            } else {
+                //否则就是PC浏览器打开
+  //              $('body').html('<div class="middle">请在微信打开</div>').addClass('gray');
+            }
+        </script>
+    </body>
+</html>
