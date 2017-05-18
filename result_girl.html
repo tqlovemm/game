@@ -13,49 +13,37 @@
         <meta name="author" content="lcwl">
 
         <link rel="stylesheet" href="./css/base.css">
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/result.css">
 
         <script>
             $uid = '';
         </script>
-<!--        <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "//hm.baidu.com/hm.js?4a51512e983d5ee97a332f55e673e995";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>-->
+
     </head>
-
     <body>
-        <div class="titlediv">
-            <img class="title" src="./images/title01.png"/>
-            <p class="subtitle">你被爱<br>
-                的七大理由</p>
+        <canvas id="canvas" style="display:none" width="720" height="1000">
+        </canvas>
+        <canvas id="canvasRadar" style="position:absolute;left:-999px" width="300" height="300">
+        </canvas>
+        <img id="output"/>
+        <img id="output2"/>
+        <div id="qrcode">
+            <!--<img id="qrcodeimg" src="http://img1.uullnn.com/h5_game/seven/images/WechatIMG1.jpeg"/>-->
         </div>
-        <img class="bg" src="./images/bg01.jpg"/>
+        <img class="btn" id="save" style="display:none" src="./images/btn02.png"/>
+        <img class="btn" id="go" style="display:none" src="./images/btn03.png"/>
+<!--        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yn.menda" target="_blank"><img class="banner" src="./images/banner.jpg"/></a>
 
-
-        <div class="op">
-            <input class="input" placeholder="请输入你的名字" maxlength="10"></input>
-            <div class="select_ctn" style="display: block;">
-                <label><input type="radio" name="gid" checked="checked" value="1">我是男生</label>
-                <label><input type="radio" name="gid" value="2">我是女生</label>
-            </div>
-            <img class="btn" src="./images/btn01.png"/>
-        </div>
-
- <!--         <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.yn.menda" target="_blank"><img class="banner" src="./images/banner.jpg"/></a>
-
- -->
+-->
 
         <script type="text/javascript" src="./js/zepto.min.js"></script>
         <script type="text/javascript" src="./js/zepto.cookie.js"></script>
+        <script type="text/javascript" src="./js/md5.js"></script>
+        <script type="text/javascript" src="./js/qrcode.js"></script>
+        <script type="text/javascript" src="./js/Chart.min.js"></script>
         <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
-        <script type="text/javascript" src="js/index.js?v6"></script>
-        <!--<script type="text/javascript" src="http://img1.uullnn.com/h5_game/seven/js/index.js?v1"></script>-->
+        <script type="text/javascript" src="js/result_girl.js?v6"></script>
+        <!--<script type="text/javascript" src="http://img1.uullnn.com/h5_game/seven/js/result.js?v1"></script>-->
         <!--<script src="http://img1.uullnn.com/tracking.js"></script>-->
 
         <script>
@@ -82,7 +70,7 @@ var _hmt = _hmt || [];
                 if (ua.match(/MicroMessenger/i) == "micromessenger") {
                     //在微信中打开
                 }else{
-                   // $('body').html('<div class="middle">请在微信打开</div>').addClass('gray');
+//                    $('body').html('<div class="middle">请在微信打开</div>').addClass('gray');
                 }
 //                if (ua.match(/WeiBo/i) == "weibo") {
 //                    //在新浪微博客户端打开
@@ -98,7 +86,7 @@ var _hmt = _hmt || [];
 //                }
             } else {
                 //否则就是PC浏览器打开
-  //              $('body').html('<div class="middle">请在微信打开</div>').addClass('gray');
+//                $('body').html('<div class="middle">请在微信打开</div>').addClass('gray');
             }
         </script>
     </body>
