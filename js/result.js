@@ -142,8 +142,8 @@
                //var url = "http://weixin.qq.com/r/qTrz6wLEKl9VrUaI92_7";  
                 var qrcode = new QRCode("qrcode", {
                     text: url,
-                    width: 256,
-                    height: 256,
+                    width: 125,
+                    height: 125,
                     colorDark : "#000000",
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
