@@ -11,6 +11,7 @@
     }
 
     $(".btn").on("click",function(){
+        var sex = $("input[type='radio']:checked").val();
         var name = $(".input").val();
         if(!name){
             alert("请输入你的名字");
@@ -21,8 +22,14 @@
             alert("您输入的名字太长");
             return;
         }
+
         $.fn.cookie("name",name);
-        window.location.href= "result.html?name="+encodeURIComponent(name);
+        if(sex==1){
+            window.location.href= "result.html?name="+encodeURIComponent(name);
+        }else {
+            window.location.href= "result_girl.html?name="+encodeURIComponent(name);
+        }
+
     });
 
     // var res = {

@@ -105,7 +105,7 @@
                 var d=document.getElementById("canvasRadar");
                 var cxt2=d.getContext("2d");
                 var data = {
-                    labels : ["段子手","多金","真爱","厚脸皮","活好","潮","个子高"],
+                    labels : ["段子手","暖男","真爱","潮","活好","帅掉渣","多金"],
                     datasets : [
                         {
                             fillColor : "rgba(0,121,212,0.5)",
@@ -138,7 +138,7 @@
                 document.getElementById("output").src = dataUrl;
                 //ToDO
                // var url = "http://www.mygushi.win/aly/index.html"; //这里要改为正式的域名
-                var url = "http://weixin.qq.com/r/sDZNVS-EP3JArWs292Oi";  //
+                var url = "http://weixin.qq.com/r/2jorM9bEWYsmrZJQ92-I";  //
                //var url = "http://weixin.qq.com/r/qTrz6wLEKl9VrUaI92_7";  
                 var qrcode = new QRCode("qrcode", {
                     text: url,
