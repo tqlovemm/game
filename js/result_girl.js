@@ -87,14 +87,14 @@
         // img2.onload = function(e) {
             // cxt.drawImage(img2,64, 200, 592, 528);
             var img3 = document.createElement('img')
-            img3.src = 'images/title02.png';
+            img3.src = 'images/title3.png';
             img3.onload = function(e) {
                 cxt.font = "50px PingFangSC-Semibold";
                 cxt.fillStyle="#006bd1";
                 var namepx = cxt.measureText(name).width;
                 var namex = (720 - namepx - 363)/2;
                 var imagex = namex + namepx+20;
-                cxt.drawImage(img3,imagex, 60, 363, 33);
+                cxt.drawImage(img3,imagex, 60, 400, 150);
 
                 // var x = 360 - 25*getByteLen(name)/2;
                 cxt.fillText(name, namex, 90);
@@ -150,7 +150,10 @@
                 });
 
                 setTimeout(function(){
+                    cxt.font = "20px PingFangSC-Semibold";
                     cxt.drawImage($('#qrcode img').get(0), (720-128)/2 , 1000 -128 -30);
+                    cxt.fillText('公众号回复 “爱”', 460, 900);
+                    cxt.fillText('测测你被爱的七大理由', 460, 930);
                     var dataUrl = c.toDataURL();
                     document.getElementById("output2").src = dataUrl;
                 },500)
