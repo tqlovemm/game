@@ -154,8 +154,8 @@
                 setTimeout(function(){
                     cxt.font = "20px PingFangSC-Semibold";
                     cxt.drawImage($('#qrcode img').get(0), (720-128)/2 , 1000 -128 -30);
-                    cxt.fillText('公众号回复 “爱”', 460, 900);
-                    cxt.fillText('测测你被爱的七大理由', 460, 930);
+             /*       cxt.fillText('公众号回复 “爱”', 460, 900);
+                    cxt.fillText('测测你被爱的七大理由', 460, 930);*/
                     var dataUrl = c.toDataURL();
                     document.getElementById("output2").src = dataUrl;
                 },500)
