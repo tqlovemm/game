@@ -106,7 +106,7 @@
                 var d=document.getElementById("canvasRadar");
                 var cxt2=d.getContext("2d");
                 var data = {
-                    labels : ["段子手","暖男","真爱","潮","活好","帅掉渣","多金"],
+                    labels : ["段子手","暖男","真爱","潮","能干","帅掉渣","多金"],
                     datasets : [
                         {
                             fillColor : "rgba(0,121,212,0.5)",
